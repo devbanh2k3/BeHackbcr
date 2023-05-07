@@ -228,7 +228,7 @@ let getresult = (url, end) => {
 
     return new Promise(async (resolve, reject) => {
         try {
-            let data = await getToken();
+            //let data = await getToken();
             var options = {
                 'method': 'POST',
                 // /getresult
@@ -236,8 +236,8 @@ let getresult = (url, end) => {
                 'headers': {
                     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                     'User-Agent': 'PostmanRuntime/7.31.3',
-                    'Cookie': data.token,
-                    'x-csrf-token': data.csrf
+                    'Cookie': '_ga=GA1.1.1076967835.1683391068; _ga_7YQ9ZVWY3D=GS1.1.1683477447.5.1.1683477471.0.0.0; XSRF-TOKEN=eyJpdiI6ImtFaGRuRGpxMmdUTXQwcDNNYTFTVUE9PSIsInZhbHVlIjoiSmQwVGNUb3JHVE5IWnNhOHpNWGQyeW0vTmRtaFhkRXNqcDNhNzFjRGhPTyt2L2FHay9GblNLNTdKTUZ5V0tnMnpvQkw4c1U1Y3Nnc3NCeGpJZURZVDR0MDQ1Ukk4bW5uRStEVXJIZm15OTVueVhSVFZQWXlQeFp3eDRBT2VPQ0MiLCJtYWMiOiI5YWM1YjU0MGExMTE0Y2Q5ZDQ3MDM4ZDBmMzEzMzk5ODY5ZmVjNGE5MzQzYzVmNWZhOTg5NGE3NDQwNjIzNDNhIn0=; hackbcr_session=eyJpdiI6IjNVdkpZY0xKZW03QitRVTBhTWVCSFE9PSIsInZhbHVlIjoiNG5xVFBSK2ErU01BbHBQTVlJcmNRWFErME45N2ZVc3FYZ0hiaGFuUUpodkxXS2JHU3lRNjNEdkU5cXdJWk9GNEI4ZDhxQUduenZJZlhnOWx5MCtVWkd2aW1CR205Z0NhYVdudjVRWDR1MERuQmh6QUpIKzZMSHdvb3JWQUt5OFAiLCJtYWMiOiJlMmM4M2JlYTk4N2RlZWNkMzNlMzVmNzAxNThkNzNjOTQ4ZGQ0YmYxM2IxNjZmNDkyMTJiM2M2MGFiNTMzNzYxIn0=',
+                    'x-csrf-token': 'I4F5KJMTbycvE8nbVSnpZAdcYSO491EcTamIR3L3'
                 },
                 form: {
                     'url': url
